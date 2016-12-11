@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="15997" started-at="2016-12-11T00:47:06Z" finished-at="2016-12-11T00:47:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15997" started-at="2016-12-11T00:47:06Z" finished-at="2016-12-11T00:47:22Z">
+      <class name="com.uscourts2.ujspacourts.testCases.AllPages">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="setBrowser" is-config="true" duration-ms="5982" started-at="2016-12-10T19:47:00Z" finished-at="2016-12-10T19:47:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="startTest" duration-ms="8680" started-at="2016-12-10T19:47:06Z" finished-at="2016-12-10T19:47:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="docketSheets(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="docketSheets" duration-ms="292" started-at="2016-12-10T19:47:15Z" data-provider="getData" finished-at="2016-12-10T19:47:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Object=docketlink_xpath, TestCase=docket, KeyWord=click}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- docketSheets -->
+        <test-method status="PASS" signature="Login(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="Login" duration-ms="2670" started-at="2016-12-10T19:47:15Z" data-provider="getData" depends-on-methods="com.uscourts2.ujspacourts.testCases.AllPages.startTest, com.uscourts2.ujspacourts.testCases.AllPages.docketSheets" finished-at="2016-12-10T19:47:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Object=login_linkText, TestCase=Login, KeyWord=click}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="Login" duration-ms="2996" started-at="2016-12-10T19:47:18Z" data-provider="getData" depends-on-methods="com.uscourts2.ujspacourts.testCases.AllPages.startTest, com.uscourts2.ujspacourts.testCases.AllPages.docketSheets" finished-at="2016-12-10T19:47:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Object=uname_xpath, TestCase=Login, Data=sow, KeyWord=sendKey}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="Login" duration-ms="1307" started-at="2016-12-10T19:47:21Z" data-provider="getData" depends-on-methods="com.uscourts2.ujspacourts.testCases.AllPages.startTest, com.uscourts2.ujspacourts.testCases.AllPages.docketSheets" finished-at="2016-12-10T19:47:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Object=pwd_xpath, TestCase=Login, Data=Raj, KeyWord=sendKey}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="afterSuite" is-config="true" duration-ms="0" started-at="2016-12-10T19:47:22Z" finished-at="2016-12-10T19:47:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.uscourts2.ujspacourts.testCases.AllPages -->
+    </test> <!-- Default test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [MySuite]" parallel="tests">
+  <parameter name="browser" value="Firefox"/>
+  <test name="SampleTest(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.uscourts2.ujspacourts.testCases.MainPage">
+        <methods>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.uscourts2.ujspacourts.testCases.MainPage -->
+    </classes>
+  </test> <!-- SampleTest(failed) -->
+</suite> <!-- Failed suite [MySuite] -->
