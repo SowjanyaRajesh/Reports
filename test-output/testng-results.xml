@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15997" started-at="2016-12-11T00:47:06Z" finished-at="2016-12-11T00:47:22Z">
+  <suite name="Suite" duration-ms="14475" started-at="2016-12-11T03:59:45Z" finished-at="2016-12-11T04:00:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15997" started-at="2016-12-11T00:47:06Z" finished-at="2016-12-11T00:47:22Z">
+    <test name="Default test" duration-ms="14475" started-at="2016-12-11T03:59:45Z" finished-at="2016-12-11T04:00:00Z">
       <class name="com.uscourts2.ujspacourts.testCases.AllPages">
-        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="setBrowser" is-config="true" duration-ms="5982" started-at="2016-12-10T19:47:00Z" finished-at="2016-12-10T19:47:06Z">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@7bd4937b]" name="setBrowser" is-config="true" duration-ms="4452" started-at="2016-12-10T22:59:41Z" finished-at="2016-12-10T22:59:45Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="startTest" duration-ms="8680" started-at="2016-12-10T19:47:06Z" finished-at="2016-12-10T19:47:15Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@7bd4937b]" name="startTest" duration-ms="7450" started-at="2016-12-10T22:59:45Z" finished-at="2016-12-10T22:59:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="docketSheets(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="docketSheets" duration-ms="292" started-at="2016-12-10T19:47:15Z" data-provider="getData" finished-at="2016-12-10T19:47:15Z">
+        <test-method status="PASS" signature="docketSheets(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@7bd4937b]" name="docketSheets" duration-ms="2468" started-at="2016-12-10T22:59:53Z" data-provider="getData" finished-at="2016-12-10T22:59:55Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- docketSheets -->
-        <test-method status="PASS" signature="Login(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="Login" duration-ms="2670" started-at="2016-12-10T19:47:15Z" data-provider="getData" depends-on-methods="com.uscourts2.ujspacourts.testCases.AllPages.startTest, com.uscourts2.ujspacourts.testCases.AllPages.docketSheets" finished-at="2016-12-10T19:47:18Z">
+        <test-method status="PASS" signature="Login(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@7bd4937b]" name="Login" duration-ms="270" started-at="2016-12-10T22:59:55Z" data-provider="getData" depends-on-methods="com.uscourts2.ujspacourts.testCases.AllPages.startTest, com.uscourts2.ujspacourts.testCases.AllPages.docketSheets" finished-at="2016-12-10T22:59:56Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Login(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="Login" duration-ms="2996" started-at="2016-12-10T19:47:18Z" data-provider="getData" depends-on-methods="com.uscourts2.ujspacourts.testCases.AllPages.startTest, com.uscourts2.ujspacourts.testCases.AllPages.docketSheets" finished-at="2016-12-10T19:47:21Z">
+        <test-method status="PASS" signature="Login(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@7bd4937b]" name="Login" duration-ms="2964" started-at="2016-12-10T22:59:56Z" data-provider="getData" depends-on-methods="com.uscourts2.ujspacourts.testCases.AllPages.startTest, com.uscourts2.ujspacourts.testCases.AllPages.docketSheets" finished-at="2016-12-10T22:59:59Z">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Login(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="Login" duration-ms="1307" started-at="2016-12-10T19:47:21Z" data-provider="getData" depends-on-methods="com.uscourts2.ujspacourts.testCases.AllPages.startTest, com.uscourts2.ujspacourts.testCases.AllPages.docketSheets" finished-at="2016-12-10T19:47:22Z">
+        <test-method status="PASS" signature="Login(java.util.Hashtable)[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@7bd4937b]" name="Login" duration-ms="1285" started-at="2016-12-10T22:59:59Z" data-provider="getData" depends-on-methods="com.uscourts2.ujspacourts.testCases.AllPages.startTest, com.uscourts2.ujspacourts.testCases.AllPages.docketSheets" finished-at="2016-12-10T23:00:00Z">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@37271612]" name="afterSuite" is-config="true" duration-ms="0" started-at="2016-12-10T19:47:22Z" finished-at="2016-12-10T19:47:22Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.uscourts2.ujspacourts.testCases.AllPages@7bd4937b]" name="afterSuite" is-config="true" duration-ms="449" started-at="2016-12-10T23:00:00Z" finished-at="2016-12-10T23:00:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

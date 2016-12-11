@@ -26,7 +26,11 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
-import com.uscourts2.ujspacourts.base.Xls_Reader;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import com.uscourts2.ujspacourts.base.*;
 
 
 
@@ -37,7 +41,8 @@ public class Keywords{
 	Properties pr =new Properties();
 	Logger log=null;
 	String fileEnd=null;
-	
+	public ExtentReports extent = ExtentManager.getInstance();
+	public ExtentTest test;
 	public Keywords() throws IOException {
 		xls = new Xls_Reader(System.getProperty("user.dir")+"\\Data.xlsx");
 		log = Logger.getLogger("devpinoyLogger");
@@ -58,6 +63,7 @@ public class Keywords{
 	{
 		
 		log.debug("finding driver");
+		
 		if(browser.equals("FireFox"))
 			dr= new FirefoxDriver();
 		else if(browser.equals("chrome"))
@@ -81,6 +87,11 @@ public class Keywords{
 	{
 		System.out.println("closing browser");
 //		dr.quit();
+		if(extent!=null){
+			extent.endTest(test);
+			extent.flush();
+		}
+		
 		
 	}
 	
@@ -153,6 +164,7 @@ public class Keywords{
 	public void click(String locator)
 	{
 		System.out.println("element clicking on is"+find(locator));
+		test.log(LogStatus.INFO, "clicking on -"+pr.getProperty(locator));
 		WebElement element = find(locator);
 		element.click();
 		
@@ -161,6 +173,7 @@ public class Keywords{
 	public void sendValue(String locator,String value)
 	{
 		System.out.println(find(locator));
+		test.log(LogStatus.INFO, "sending "+value+" in locator- "+pr.getProperty(locator) );
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -181,6 +194,7 @@ public class Keywords{
 		File file = ((TakesScreenshot)dr).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(file,new File(System.getProperty("user.dir")+"\\screenshots\\"+str+fileEnd+".png"));
+			test.addScreenCapture(System.getProperty("user.dir")+"\\screenshots\\"+str+fileEnd+".png");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			System.out.println(System.getProperty("user.dir"+"\\screenshots\\"+str+fileEnd));

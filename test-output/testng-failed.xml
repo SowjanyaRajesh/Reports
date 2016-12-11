@@ -6,10 +6,10 @@
     <classes>
       <class name="com.uscourts2.ujspacourts.testCases.AllPages">
         <methods>
-          <include name="docketSheets" invocation-numbers="0"/>
+          <include name="docketSheets"/>
           <include name="startTest"/>
           <include name="Login"/>
-          <include name="afterSuite"/>
+          <include name="end"/>
           <include name="setBrowser"/>
         </methods>
       </class> <!-- com.uscourts2.ujspacourts.testCases.AllPages -->
